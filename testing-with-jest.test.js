@@ -8,13 +8,22 @@
 
 // --------------------1a) Create a test for a function called addThemUp that takes two numbers as arguments and returns the sum.
 
+describe("addThemUp", () => {
+  test("given two numbers return sum",  () => {
+    expect(addThemUp(2,3)).toEqual(5)
+    expect(addThemUp(3,4)).toEqual(7)
+    expect(addThemUp(4,5)).toEqual(9)
+  })
+})
 
 
 
 
 // --------------------1b) See the test fail. THEN write the code to make the test pass.
 
-
+const addThemUp = (number1, number2) => {
+  return number1 + number2
+}
 
 
 

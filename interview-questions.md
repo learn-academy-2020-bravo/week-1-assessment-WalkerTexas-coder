@@ -4,7 +4,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 1. What is a function? Why would you use one?
 
-  Your answer:
+  Your answer: a function is a dynamic variable. It is set up to take in information and process it according to design
 
   Researched answer:
 
@@ -12,7 +12,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 2. What is the difference between map and filter?
 
-  Your answer:
+  Your answer: Map can run through an array and return with a new array giving us useful information where as a filter can create a new array with desired data
 
   Researched answer:
 
@@ -20,7 +20,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 3. What is the difference between console.log() and return?
 
-  Your answer:
+  Your answer: return operates as a part of a function where console.log calls the function desired to begin operation
 
   Researched answer:
 
@@ -28,7 +28,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 4. In regards to functions, what is an argument?
 
-  Your answer:
+  Your answer: the information passed into the machine that is the function
 
   Researched answer:
 
