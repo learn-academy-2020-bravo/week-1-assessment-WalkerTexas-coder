@@ -1,10 +1,10 @@
-// ASSESSMENT 1: Coding practical questions
-//
-// Please read all questions thoroughly
-// Psuedo coding is highly recommended
-//
-// --------------------1) Create a function that determines if a temperature is below boiling point, at boiling point or above boiling point. Boiling point is 212 degrees Farhenheit.
-// Use the test variables provided below. Expected outcome: "35 is below boiling point", "350 is above boiling point", "212 is at boiling point"
+ASSESSMENT 1: Coding practical questions
+
+Please read all questions thoroughly
+Psuedo coding is highly recommended
+
+--------------------1) Create a function that determines if a temperature is below boiling point, at boiling point or above boiling point. Boiling point is 212 degrees Farhenheit.
+Use the test variables provided below. Expected outcome: "35 is below boiling point", "350 is above boiling point", "212 is at boiling point"
 var temp1 = 35
 var temp2 = 350
 var temp3 = 212
@@ -63,8 +63,8 @@ console.log(mult5two(myNumbers2));
 
 
 
-// --------------------4) Create a function that removes all the vowels from a string.
-// Use the test variables provided below. Expected output: "HyThrLrnStdnt" "LvJvScrpt"
+--------------------4) Create a function that removes all the vowels from a string.
+Use the test variables provided below. Expected output: "HyThrLrnStdnt" "LvJvScrpt"
 
 var stringWithVowels1 = "HeyThereLearnStudent"
 var stringWithVowels2 = "ILoveJavaScript"
@@ -94,8 +94,8 @@ console.log(noVowel(stringWithVowels2));
 
 
 
-// --------------------5) Expand the logic from #4 to inform your user if the variable passed into the vowel removal function is not a string.
-// Copy and paste or rewrite the function. Use the test variables provided below.
+--------------------5) Expand the logic from #4 to inform your user if the variable passed into the vowel removal function is not a string.
+Copy and paste or rewrite the function. Use the test variables provided below.
 
 var notAString1 = true
 var notAString2 = 42
