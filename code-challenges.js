@@ -1,10 +1,10 @@
-ASSESSMENT 1: Coding practical questions
-
-Please read all questions thoroughly
-Psuedo coding is highly recommended
-
---------------------1) Create a function that determines if a temperature is below boiling point, at boiling point or above boiling point. Boiling point is 212 degrees Farhenheit.
-Use the test variables provided below. Expected outcome: "35 is below boiling point", "350 is above boiling point", "212 is at boiling point"
+// ASSESSMENT 1: Coding practical questions
+//
+// Please read all questions thoroughly
+// Psuedo coding is highly recommended
+//
+// --------------------1) Create a function that determines if a temperature is below boiling point, at boiling point or above boiling point. Boiling point is 212 degrees Farhenheit.
+// Use the test variables provided below. Expected outcome: "35 is below boiling point", "350 is above boiling point", "212 is at boiling point"
 var temp1 = 35
 var temp2 = 350
 var temp3 = 212
@@ -20,9 +20,9 @@ const boilingPoint = (num) => {
 }   else if (num >= 213) {
   return (num) + " is above boiling point"
   //declare an else that returns "error: please insert a number"
-} else return "error: please insert a number"
+}   else return "error: please insert a number"
 }
-call function
+// call function
 console.log(boilingPoint(temp1));
 console.log(boilingPoint(temp2));
 console.log(boilingPoint(temp3));
@@ -49,11 +49,17 @@ console.log(mult5(myNumbers1));
 
 var myNumbers2 = [8, -7, 0, 6, 2]
 // declare a function mult5two taht takes an arrray as an argument
-// declare a local variable array nums2mult5
-// map through array and multpile values by 5
-// return new values
+const mult5two = (array) => {
+  // declare a local variable array nums2mult5
+  let nums2mult5 = array.map(value => {
+    // map through array and multpile values by 5
+      return value * 5
+  })
+  // return new values
+ return nums2mult5
+}
 //call function mult5two
-
+console.log(mult5two(myNumbers2));
 
 
 
@@ -63,13 +69,27 @@ var myNumbers2 = [8, -7, 0, 6, 2]
 var stringWithVowels1 = "HeyThereLearnStudent"
 var stringWithVowels2 = "ILoveJavaScript"
 
-// decalre function noVowel that takes an argument
-// create a new local variable #let woVowels that
-// #split a string into an arrray
-// declare a new array #voWels that identifies the strings "a", "e", "i", "o", "u", "A", "E", "I", "O", "U"
-// fliter through woVowels array
-// return woVowels
+// declare function noVowel that takes an argument (string)
+const noVowel = (string) => {
+  // declare a new let array #vowels that identifies the array "a", "e", "i", "o", "u", "A", "E", "I", "O", "U"
+    let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    // create a new local array  "woVowels" that
+    let splitString = string.split("")
+    // fliter through (array) against #vowels
+
+    let filtered = splitString.filter(letter =>
+          // learned about .includes
+       !vowels.includes(letter))
+      console.log(splitString);
+      console.log(filtered);
+
+            // return woVowels.join as an string
+        return filtered.join("")
+}
 // call function
+console.log(noVowel(stringWithVowels1));
+console.log(noVowel(stringWithVowels2));
+
 
 
 
@@ -80,8 +100,32 @@ var stringWithVowels2 = "ILoveJavaScript"
 var notAString1 = true
 var notAString2 = 42
 
-//if var is a string preform previous commans
+// if var is a string preform previous commans
 // else return "variable is not a string"
+
+const noNoVowel = (string) => {
+  if (typeof string === "string") {
+
+    let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+
+    let splitString = string.split("")
+
+    let filtered = splitString.filter(letter =>
+
+       !vowels.includes(letter))
+
+      console.log(splitString);
+
+      console.log(filtered);
+
+        return filtered.join("")
+      } else {
+  return " variable is not a string"
+  }
+}
+console.log(noNoVowel(notAString1));
+
+console.log(noNoVowel(notAString2));
 
 
 // --------------------6) Create a function that takes the toonimals array and returns an array with only the toon objects that are cats.
@@ -96,8 +140,14 @@ var toonimals = [
 {name: "Ren", animal: "dog"},
 {name: "Felix", animal: "cat"}]
 
-//declare function findAnimal
-// create local variable cats that takes ana array and .filters for value "cat"
+// declare function findAnimal
+const findAnimal = (arrayOfAnimals) => {
+  // create local variable cats that takes an a array and .filters for value "cat"
+
+  let cats= arrayOfAnimals.filter(object => object.animal === "cat" )
+    return cats
+}
+console.log(findAnimal(toonimals));
 // return the key array
 
 
@@ -106,3 +156,15 @@ var toonimals = [
 
 // --------------------7) Using the toonimals variable from #6, create a function that returns only the names of the non-cats.
 // Expected output: "Itchy" "Daffy" "Ren"
+
+
+const findAnimal2 = (arrayOfAnimals) => {
+
+  let notCats= arrayOfAnimals.filter(object => object.animal !== "cat")
+  return  notCats.map(value => value.name)
+
+
+
+}
+
+console.log(findAnimal2(toonimals));
